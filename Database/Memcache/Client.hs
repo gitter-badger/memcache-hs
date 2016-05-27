@@ -65,6 +65,9 @@ import Database.Memcache.Server
 import Database.Memcache.Socket
 import Database.Memcache.Types hiding (cas)
 
+#if __GLASGOW_HASKELL__ < 710
+import Control.Applicative
+#endif
 import Control.Exception (handle, throwIO, SomeException)
 import Control.Monad (forM_, void, when)
 import Data.Default.Class

@@ -68,6 +68,7 @@ library
   other-extensions:
     BangPatterns,
     CPP,
+    DeriveDataTypeable,
     FlexibleInstances,
     RecordWildCards,
     ScopedTypeVariables
